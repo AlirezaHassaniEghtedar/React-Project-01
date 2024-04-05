@@ -1,10 +1,12 @@
 import React from "react";
-import './footer.css'
+import styles from './footer.module.scss'
 
 export const Footer = () => {
-    <footer className="footer">
-        <h1>This is the Footer Section</h1>
+    return(
+    <footer className={styles.footer}>
+        <h1 style={{margin:0}}>This is the Footer Section</h1>
     </footer>
+    )
 }
 
 export default Footer;

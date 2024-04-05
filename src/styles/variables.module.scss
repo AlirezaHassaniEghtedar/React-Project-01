@@ -1,0 +1,14 @@
+$main-bg-color : #25575e;
+$secondary-bg-color : #FFF;
+
+$main-light-color : #fff;
+$secondary-light-color : #caf2eb;
+
+
+:export {
+    mainThemeColor : $main-light-color;
+    secondThemeColor : $secondary-light-color;
+
+    mainBg : $main-bg-color;
+    secondaryBg : $secondary-bg-color;
+}
