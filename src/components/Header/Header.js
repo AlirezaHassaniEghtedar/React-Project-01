@@ -4,21 +4,41 @@ import globalStyles from '../../styles/variables.module.scss'
 import logo from '../../assets/logo.svg'
 
 export const Header = () => {
+    const[mobileNavMenuVisibility , setmobileNavMenuVisibility] = useState(false)
+    const toggleMobileMenu = () => {
+        setmobileNavMenuVisibility(previousValue => !previousValue);
+    }
+
+    // useEffect(() => {
+    //     let handler = (e) => {
+    //         if(!menuRef.current.contains(e.target)) {
+    //             toggleMobileMenu()
+    //         }
+    //     }
+
+    //     document.addEventListener("mousedown" , handler)
+    // })
+
+    // let menuRef = useRef();
+
     return(
     <header className={styles.header}>
-        <TopHeaderSection />
+        <TopHeaderSection toggleMobileMenu = {toggleMobileMenu}/>
         <MainHeaderSection />
-        <MobileNavMenu />
+        <MobileNavMenu 
+        mobileNavMenuVisibility={mobileNavMenuVisibility} 
+        toggleMobileMenu={toggleMobileMenu}/>
     </header>
     )
 }
 
-const TopHeaderSection = () => {
+const TopHeaderSection = ({toggleMobileMenu}) => {
     return(
         <div className={styles.topHeader} style={{background: globalStyles.mainBg}}>
             <ContactSection />
             <NavMenu />
             <SingUpSignIn />
+            <i className={`fa-solid fa-bars ${styles.openMobileMenuIcon}`} onClick={toggleMobileMenu}></i>
         </div>
     )
 }
@@ -156,12 +176,13 @@ const Cart = () => {
     )
 }
 
-const MobileNavMenu = () => {
+const MobileNavMenu = ({mobileNavMenuVisibility , toggleMobileMenu , menuRef}) => {
     const mobileNavMenuItems = ["Home" , "My Account" , "Shop" , "Cart" , "About" , "Contact"];
-    const[mobileNavMenuVisibility , setmobileNavMenuVisibility] = useState(false)
     return(
-        <div className={mobileNavMenuVisibility ? `${styles.mobileNavMenuContainer} active` : styles.mobileNavMenuContainer}>
-        {/* <i className={`${styles.mobileMenuCloseBtn} fa-solid fa-times`} onClick={setmobileNavMenuVisibility(false)}></i> */}
+        <div 
+        className={mobileNavMenuVisibility ? `${styles.mobileNavMenuContainer} ${styles.active}` : styles.mobileNavMenuContainer} ref={menuRef}>
+            <div className={styles.overlay}></div>
+            <i className={`${styles.mobileMenuCloseBtn} fa-solid fa-times`} onClick={toggleMobileMenu}></i>
             <Logo position={"MobileNavMenuLogo"}/>
             <ul className={styles.mobileNavMenu}>
                 {mobileNavMenuItems.map(item => 

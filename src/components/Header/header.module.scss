@@ -74,6 +74,16 @@
   transition: all 0.3s ease;
 }
 
+.openMobileMenuIcon {
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
 .mainHeader {
   position: fixed;
   justify-content: space-between;
@@ -118,10 +128,14 @@
   background: #25575E;
   box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.15);
   transform: translateX(-100%);
+  visibility: hidden;
+  transition: all ease 0.5s;
 }
 
 .mobileNavMenuContainer.active {
-  transform: translateX(0%);
+  transform: translateX(0);
+  visibility: visible;
+  transition: all ease 0.5s;
 }
 
 .mobileNavMenuLogo {
@@ -174,6 +188,23 @@
   }
 
   .contactSection {
-    width: 65%;
+    width: 70%;
+  }
+
+  .singUpSignInContainer {
+    width: 30%;
+  }
+
+  .openMobileMenuIcon {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .mainHeaderNavMenu {
+    display: none;
+  }
+
+  .cartAndSearchContainer {
+    width: 90%;
   }
 }
