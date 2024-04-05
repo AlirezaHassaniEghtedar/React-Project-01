@@ -1,3 +1,75 @@
-.main {
-    padding-top: 125px;
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@700&display=swap');
+
+.mainBannerSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    background-image: url('../../assets/images/MainBanner.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainBannerSection::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to left, rgba($color : #000 , $alpha : 0.5) , rgba($color : #000 , $alpha : 0.15));
+    z-index: -1;
+}
+
+.mainBannerSection h1 {
+    color: #FFF;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 48px;
+    line-height: 125px;
+}
+
+.mainBannerSection p {
+    color: #FFF;
+    width: 85%;
+    text-align: center;
+    text-align-last: center;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.aboutSectionBoxesContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+    padding: 50px;
+}
+
+.aboutSectionBox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width : 1000px) {
+    .mainBannerSection h1 {
+        font-size: 24px;
+        line-height: 60px;
+        padding-bottom: 50px;
+        width: 85%;
+    }
+
+    .mainBannerSection {
+        justify-content: flex-end;
+        padding-bottom: 75px;
+    }
 }

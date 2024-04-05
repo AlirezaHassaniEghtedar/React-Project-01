@@ -1,36 +1,115 @@
 import React from "react";
 import styles from './mainContent.module.scss'
+import globalStyles from '../../styles/variables.module.scss'
 
 export const MainContent = () => {
     return(
         <main className={styles.main}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. A condimentum vitae sapien pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Augue lacus viverra vitae congue. Habitant morbi tristique senectus et netus et malesuada fames. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Tristique senectus et netus et malesuada fames ac. Sit amet cursus sit amet dictum sit amet justo donec. Eget mi proin sed libero enim sed faucibus turpis in. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Enim nec dui nunc mattis enim ut tellus elementum. Id aliquet lectus proin nibh nisl. In arcu cursus euismod quis viverra nibh. Est velit egestas dui id ornare arcu odio ut. Maecenas pharetra convallis posuere morbi leo urna. Et netus et malesuada fames ac.
-
-Elementum curabitur vitae nunc sed velit dignissim sodales ut. Et malesuada fames ac turpis egestas sed tempus urna. Eros donec ac odio tempor orci. Nulla pharetra diam sit amet. Dui vivamus arcu felis bibendum ut tristique et egestas. Diam sollicitudin tempor id eu nisl nunc mi. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Vel orci porta non pulvinar neque. Ut sem viverra aliquet eget. Adipiscing commodo elit at imperdiet dui. Platea dictumst quisque sagittis purus sit. Phasellus vestibulum lorem sed risus. Imperdiet dui accumsan sit amet nulla facilisi. Sit amet nisl purus in mollis nunc sed id semper. Porttitor massa id neque aliquam vestibulum morbi blandit.
-
-In cursus turpis massa tincidunt dui. Eu facilisis sed odio morbi quis commodo. Nisl nisi scelerisque eu ultrices vitae auctor eu. Feugiat sed lectus vestibulum mattis. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Ultricies leo integer malesuada nunc vel risus commodo viverra. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Adipiscing elit ut aliquam purus sit. Magna fringilla urna porttitor rhoncus dolor purus non. Volutpat diam ut venenatis tellus in metus. Sed risus pretium quam vulputate dignissim. Sit amet nisl purus in mollis nunc sed id semper.
-
-Quis enim lobortis scelerisque fermentum dui faucibus in. Laoreet id donec ultrices tincidunt arcu non. Nisl nunc mi ipsum faucibus vitae. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Porttitor lacus luctus accumsan tortor posuere. Eu facilisis sed odio morbi quis. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Sed blandit libero volutpat sed cras ornare. Ipsum dolor sit amet consectetur adipiscing. Dolor morbi non arcu risus quis varius quam quisque. Scelerisque eu ultrices vitae auctor eu augue ut. Dignissim sodales ut eu sem integer vitae justo. Vitae congue eu consequat ac felis donec et odio. Amet nisl suscipit adipiscing bibendum. Elit duis tristique sollicitudin nibh. Convallis posuere morbi leo urna molestie at elementum. Id porta nibh venenatis cras. Elementum curabitur vitae nunc sed velit dignissim.
-
-Lectus proin nibh nisl condimentum id venenatis. Amet luctus venenatis lectus magna. Sit amet tellus cras adipiscing enim eu turpis egestas. Commodo sed egestas egestas fringilla phasellus faucibus. Eu nisl nunc mi ipsum. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Et netus et malesuada fames ac turpis egestas. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Ornare lectus sit amet est placerat in. Habitant morbi tristique senectus et. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Rhoncus urna neque viverra justo nec.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. A condimentum vitae sapien pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Augue lacus viverra vitae congue. Habitant morbi tristique senectus et netus et malesuada fames. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Tristique senectus et netus et malesuada fames ac. Sit amet cursus sit amet dictum sit amet justo donec. Eget mi proin sed libero enim sed faucibus turpis in. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Enim nec dui nunc mattis enim ut tellus elementum. Id aliquet lectus proin nibh nisl. In arcu cursus euismod quis viverra nibh. Est velit egestas dui id ornare arcu odio ut. Maecenas pharetra convallis posuere morbi leo urna. Et netus et malesuada fames ac.
-
-Elementum curabitur vitae nunc sed velit dignissim sodales ut. Et malesuada fames ac turpis egestas sed tempus urna. Eros donec ac odio tempor orci. Nulla pharetra diam sit amet. Dui vivamus arcu felis bibendum ut tristique et egestas. Diam sollicitudin tempor id eu nisl nunc mi. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Vel orci porta non pulvinar neque. Ut sem viverra aliquet eget. Adipiscing commodo elit at imperdiet dui. Platea dictumst quisque sagittis purus sit. Phasellus vestibulum lorem sed risus. Imperdiet dui accumsan sit amet nulla facilisi. Sit amet nisl purus in mollis nunc sed id semper. Porttitor massa id neque aliquam vestibulum morbi blandit.
-
-In cursus turpis massa tincidunt dui. Eu facilisis sed odio morbi quis commodo. Nisl nisi scelerisque eu ultrices vitae auctor eu. Feugiat sed lectus vestibulum mattis. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Ultricies leo integer malesuada nunc vel risus commodo viverra. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Adipiscing elit ut aliquam purus sit. Magna fringilla urna porttitor rhoncus dolor purus non. Volutpat diam ut venenatis tellus in metus. Sed risus pretium quam vulputate dignissim. Sit amet nisl purus in mollis nunc sed id semper.
-
-Quis enim lobortis scelerisque fermentum dui faucibus in. Laoreet id donec ultrices tincidunt arcu non. Nisl nunc mi ipsum faucibus vitae. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Porttitor lacus luctus accumsan tortor posuere. Eu facilisis sed odio morbi quis. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Sed blandit libero volutpat sed cras ornare. Ipsum dolor sit amet consectetur adipiscing. Dolor morbi non arcu risus quis varius quam quisque. Scelerisque eu ultrices vitae auctor eu augue ut. Dignissim sodales ut eu sem integer vitae justo. Vitae congue eu consequat ac felis donec et odio. Amet nisl suscipit adipiscing bibendum. Elit duis tristique sollicitudin nibh. Convallis posuere morbi leo urna molestie at elementum. Id porta nibh venenatis cras. Elementum curabitur vitae nunc sed velit dignissim.
-
-Lectus proin nibh nisl condimentum id venenatis. Amet luctus venenatis lectus magna. Sit amet tellus cras adipiscing enim eu turpis egestas. Commodo sed egestas egestas fringilla phasellus faucibus. Eu nisl nunc mi ipsum. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Et netus et malesuada fames ac turpis egestas. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Ornare lectus sit amet est placerat in. Habitant morbi tristique senectus et. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Rhoncus urna neque viverra justo nec.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. A condimentum vitae sapien pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Augue lacus viverra vitae congue. Habitant morbi tristique senectus et netus et malesuada fames. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Tristique senectus et netus et malesuada fames ac. Sit amet cursus sit amet dictum sit amet justo donec. Eget mi proin sed libero enim sed faucibus turpis in. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Enim nec dui nunc mattis enim ut tellus elementum. Id aliquet lectus proin nibh nisl. In arcu cursus euismod quis viverra nibh. Est velit egestas dui id ornare arcu odio ut. Maecenas pharetra convallis posuere morbi leo urna. Et netus et malesuada fames ac.
-
-Elementum curabitur vitae nunc sed velit dignissim sodales ut. Et malesuada fames ac turpis egestas sed tempus urna. Eros donec ac odio tempor orci. Nulla pharetra diam sit amet. Dui vivamus arcu felis bibendum ut tristique et egestas. Diam sollicitudin tempor id eu nisl nunc mi. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Vel orci porta non pulvinar neque. Ut sem viverra aliquet eget. Adipiscing commodo elit at imperdiet dui. Platea dictumst quisque sagittis purus sit. Phasellus vestibulum lorem sed risus. Imperdiet dui accumsan sit amet nulla facilisi. Sit amet nisl purus in mollis nunc sed id semper. Porttitor massa id neque aliquam vestibulum morbi blandit.
-
-In cursus turpis massa tincidunt dui. Eu facilisis sed odio morbi quis commodo. Nisl nisi scelerisque eu ultrices vitae auctor eu. Feugiat sed lectus vestibulum mattis. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Ultricies leo integer malesuada nunc vel risus commodo viverra. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Adipiscing elit ut aliquam purus sit. Magna fringilla urna porttitor rhoncus dolor purus non. Volutpat diam ut venenatis tellus in metus. Sed risus pretium quam vulputate dignissim. Sit amet nisl purus in mollis nunc sed id semper.
-
-Quis enim lobortis scelerisque fermentum dui faucibus in. Laoreet id donec ultrices tincidunt arcu non. Nisl nunc mi ipsum faucibus vitae. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Porttitor lacus luctus accumsan tortor posuere. Eu facilisis sed odio morbi quis. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Sed blandit libero volutpat sed cras ornare. Ipsum dolor sit amet consectetur adipiscing. Dolor morbi non arcu risus quis varius quam quisque. Scelerisque eu ultrices vitae auctor eu augue ut. Dignissim sodales ut eu sem integer vitae justo. Vitae congue eu consequat ac felis donec et odio. Amet nisl suscipit adipiscing bibendum. Elit duis tristique sollicitudin nibh. Convallis posuere morbi leo urna molestie at elementum. Id porta nibh venenatis cras. Elementum curabitur vitae nunc sed velit dignissim.
-
-Lectus proin nibh nisl condimentum id venenatis. Amet luctus venenatis lectus magna. Sit amet tellus cras adipiscing enim eu turpis egestas. Commodo sed egestas egestas fringilla phasellus faucibus. Eu nisl nunc mi ipsum. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Et netus et malesuada fames ac turpis egestas. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Ornare lectus sit amet est placerat in. Habitant morbi tristique senectus et. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Rhoncus urna neque viverra justo nec.
+            <MainBannerSection />
+            <AboutUsSection />
+            <NewCollectionSection />
+            <DiscountSection />
+            <ProductsSection />
+            <CustomersReviewsSection />
+            <OrderSection />
+            <QouteSection />
         </main>
     )
 }
+
+const MainBannerSection = () => {
+    const style = {background : "#FFF" , color : globalStyles.mainBg , padding : "10px" , borderRadius : "3px"}
+    return(
+        <div className={styles.mainBannerSection}>
+            <h1>Phones Are Good<br /> 
+            But <span style={style}>Our Phones</span> Are The <span style={style}>Best</span></h1>
+            <p>
+                "Phones Are Good, But Our Phones Are The Best" - this statement encapsulates our firm belief in
+                the superiority of our products. In today's world, where connectivity is crucial, having a reliable
+                and innovative device is essential. While recognizing the value of all phones, we take pride in
+                the unmatched quality and performance of our offerings. From cutting-edge features to seamless functionality, our phones
+                are meticulously designed to exceed expectations. With a focus on innovation, we invite you to experience why
+                our phones stand out as the ultimate choice for your communication and technological needs.
+            </p>
+        </div>
+    )
+}
+const AboutUsSection = () => {
+    return(
+        <div>
+            <h1>AboutUs</h1>
+            <div className={styles.aboutSectionBoxesContainer}>
+                <AboutSectionBox 
+                iconClassName={"fa-regular fa-clock"} 
+                headerContent={"Timing"} 
+                paragraphContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
+                <AboutSectionBox 
+                iconClassName={"fa-solid fa-gear"} 
+                headerContent={"Setting"} 
+                paragraphContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
+                <AboutSectionBox 
+                iconClassName={"fa-solid fa-vault"} 
+                headerContent={"Money back"} 
+                paragraphContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
+                <AboutSectionBox 
+                iconClassName={"fa-solid fa-globe"} 
+                headerContent={"World Wide Shipping"} 
+                paragraphContent={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
+            </div>
+        </div>
+    )
+}
+
+const AboutSectionBox = ({iconClassName , headerContent , paragraphContent}) => {
+    return(
+        <div className={styles.aboutSectionBox}>
+            <i className={iconClassName}></i>
+            <h3>{headerContent}</h3>
+            <p>{paragraphContent}</p>
+        </div>
+    )
+}
+
+const NewCollectionSection = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
+const DiscountSection = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
+const ProductsSection = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
+const CustomersReviewsSection = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
+const OrderSection = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
+const QouteSection = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
+
