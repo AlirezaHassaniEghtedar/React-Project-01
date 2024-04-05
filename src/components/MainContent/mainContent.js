@@ -35,9 +35,10 @@ const MainBannerSection = () => {
     )
 }
 const AboutUsSection = () => {
+    const style = {color : globalStyles.mainThemeColor , padding : "10px" , borderRadius : "3px"}
     return(
         <div>
-            <h1>AboutUs</h1>
+            <h1 className="d-flex justify-content-center align-items-center pt-5 pb-2"><span className="ms-2 bg-success bg-gradient bg-opacity-25" style={style}>About <span style={{color : globalStyles.mainBg}}>Us</span></span></h1>
             <div className={styles.aboutSectionBoxesContainer}>
                 <AboutSectionBox 
                 iconClassName={"fa-regular fa-clock"} 
@@ -62,21 +63,82 @@ const AboutUsSection = () => {
 
 const AboutSectionBox = ({iconClassName , headerContent , paragraphContent}) => {
     return(
-        <div className={styles.aboutSectionBox}>
-            <i className={iconClassName}></i>
-            <h3>{headerContent}</h3>
-            <p>{paragraphContent}</p>
+        <div className="d-flex flex-column justify-content-center align-items-center bg-success p-4 text-dark bg-opacity-25 rounded-1">
+            <i className={`${iconClassName} fs-1`}></i>
+            <h3 className="fs-3 pt-4 pb-2">{headerContent}</h3>
+            <p style={{textAlign : "center" , textAlignLast : "center" , textAlign : "justify"}}>{paragraphContent}</p>
         </div>
     )
 }
 
 const NewCollectionSection = () => {
+    const newCollectionData = {
+        product1 : {
+            title : "Product01" , 
+            price : "100$" , 
+            imageSrc : "https://dkstatics-public.digikala.com/digikala-products/f1c52ab36a753464bb6a17919f6b3f781acc44b5_1684135768.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        } , 
+        
+        product2 : {
+            title : "Product02" , 
+            price : "100$" , 
+            imageSrc : "https://dkstatics-public.digikala.com/digikala-products/fef4d75b01a352241add7ae5cf2fc04130693dc1_1706096962.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        } , 
+        
+        product3 : {
+            title : "Product03" , 
+            price : "100$" , 
+            imageSrc : "https://dkstatics-public.digikala.com/digikala-products/ec9a962187e1f82cc47e7a148ef99ec1c6fd024d_1656423336.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        } , 
+        
+        product4 : {
+            title : "Product04" , 
+            price : "100$" , 
+            imageSrc : "https://dkstatics-public.digikala.com/digikala-products/444db8fa74297b7eb133eedf29c98443ad141ed3_1681801303.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"} , 
+        
+    }
+    const style = {color : globalStyles.mainThemeColor , padding : "10px" , borderRadius : "3px"}
     return(
-        <div>
-
+        <div className={`${styles.newCollectionSection}`}>
+            <h1 className="d-flex justify-content-center align-items-center pt-5 pb-2"><span className="bg-light bg-gradient bg-opacity-25" style={style}><span className="me-2" style={{color : globalStyles.mainBg}}>New</span>Collection</span></h1>
+            <div className="row p-5" style={{gap : "25px"}}>
+                {Object.keys(newCollectionData).map(item => 
+                <NewCollectionBox 
+                title={newCollectionData[item].title} price={newCollectionData[item].price} imageSrc={newCollectionData[item].imageSrc}/>)}
+            </div>
         </div>
     )
 }
+
+
+
+
+const NewCollectionBox = ({title , price , imageSrc}) => {
+    return(
+        <div className="col p-3 rounded-2 bg-light bg-opacity-25 bg-gradient">
+            <ProductOverlay imageSrc={imageSrc}/>
+            <ProductContent title={title} price={price}/>
+        </div>
+    )
+}
+
+const ProductOverlay = ({imageSrc}) => {
+    return(
+        <div>
+            <img src={imageSrc} className={`${styles.newCollectionProductImg} rounded-1`} alt="product"/>
+        </div>
+    )
+}
+
+const ProductContent = ({title , price}) => {
+    return(
+        <div className="d-flex flex-column mt-3">
+            <div style={{background : "#FFF"}} className="d-flex justify-content-center fs-5 mb-1 rounded-1">{title}</div>
+            <div style={{background : "#FFF"}} className="d-flex justify-content-center fs-5 mt-2 rounded-1">{price}</div>
+        </div>
+    )
+}
+
 const DiscountSection = () => {
     return(
         <div>

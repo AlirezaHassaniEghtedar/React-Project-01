@@ -49,7 +49,7 @@
 .aboutSectionBoxesContainer {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 50px;
+    gap: 25px;
     padding: 50px;
 }
 
@@ -60,6 +60,19 @@
     align-items: center;
 }
 
+.newCollectionSection {
+    background-image: url('../../assets/images/NewCollectionSection.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.newCollectionProductImg {
+    width: 100%;
+    height: 100%;
+}
+
+// Media Query - Responsive
 @media only screen and (max-width : 1000px) {
     .mainBannerSection h1 {
         font-size: 24px;
